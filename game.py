@@ -20,7 +20,7 @@ def dino_tint(on_ground):
 
 def on_obstacle_passed(obstacle, score):
     """Called once, the frame an obstacle finishes scrolling past the dino. Add a sound or a combo counter here."""
-    pass
+    print(f"Obstacle passed! Current Score: {score}")
 
 
 def max_jumps():
