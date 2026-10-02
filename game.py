@@ -12,7 +12,10 @@ HIGH_SCORE_FILE = "dino_highscore.txt"
 
 def dino_tint(on_ground):
     """Return an (r, g, b) colour override for the dino based on whether it's on the ground, or None for the default green."""
-    pass
+    if on_ground:
+        return None
+    else:
+        return (0, 0, 255)  # Blue color while jumping
 
 
 def on_obstacle_passed(obstacle, score):
